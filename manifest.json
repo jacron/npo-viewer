@@ -1,0 +1,29 @@
+{
+  "name": "NPO viewer",
+  "description": "Nice clean viewer",
+  "author": "jan h croonen",
+  "version": "0.1",
+  "permissions": [
+    "declarativeContent",
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_icon": "images/youtube32.png",
+    "default_title": "youtube viewer"
+  },
+  "content_scripts": [{
+    "matches": ["https://www.npostart.nl/live/*"],
+    "js": ["content.js"]
+    }],
+  "icons": {
+    "16": "images/youtube16.png",
+    "32": "images/youtube32.png",
+    "48": "images/youtube48.png",
+    "128": "images/youtube128.png"
+  },
+  "manifest_version": 2
+}
