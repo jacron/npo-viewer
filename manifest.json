@@ -16,7 +16,7 @@
     "default_title": "npo viewer"
   },
   "content_scripts": [{
-    "matches": ["https://www.npostart.nl/live/*"],
+    "matches": ["https://www.npostart.nl/*/*"],
     "js": ["content.js"]
     }],
   "icons": {
